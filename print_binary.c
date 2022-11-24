@@ -26,7 +26,7 @@ int print_binary(va_list list)
 		if (num % 2 == 0)
 			str[i] = '0';
 		else
-			sre[i] = '1';
+			str[i] = '1';
 		num = num / 2;
 	}
 	str[i] = '\0';

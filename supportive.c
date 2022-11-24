@@ -13,15 +13,15 @@ char *rev_string(char *s)
 	char tmp;
 	char *destination;
 
-	for (length = 0; s[lenght] != '\0'; len++)
+	for (length = 0; s[length] != '\0'; length++)
 	{}
 
 	destination = malloc(sizeof(char) * length + 1);
 	if (destination == NULL)
 		return (NULL);
 
-	_memcpy(dest, s, len);
-	for (head = 0; head < lenght; head++, lenght--)
+	_memcpy(destination, s, len);
+	for (head = 0; head < length; head++, length--)
 	{
 		tmp = destination[len - 1];
 		destination[length - 1] = destination[head];

@@ -23,7 +23,7 @@ int print_unsigned_number(unsigned int n)
 		num %= div;
 		div /= 10;
 	}
-	return (num_lenght);
+	return (num_length);
 }
 /**
  * unsigned_integer - prints Unsigned integers

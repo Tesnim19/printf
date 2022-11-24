@@ -1,6 +1,6 @@
 #include "main.h"
 
-int hex_check(int, char);
+int hex_checker(int, char);
 
 /**
  * print_hex - Prints decimal number on base16 lowercase
