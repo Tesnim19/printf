@@ -21,8 +21,8 @@ struct converter
 typedef struct converter form_spec;
 
 int _putchar(char);
-int seq_parser(const char *format, form_spec spec_list[];
-va_list args);
+int seq_parser(const char *format,
+form_spec spec_list[], va_list args);
 int _printf(const char *format, ...);
 int print_char(va_list);
 int print_string(va_list);

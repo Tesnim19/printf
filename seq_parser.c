@@ -6,7 +6,7 @@
 * @args: list containing all the argumentents passed
 * Return: total count of printed characters
 */
-int sequence_parser(const char *format, f_specifiers spec_list[], va_list args)
+int seq_parser(const char *format, form_spec spec_list[], va_list args)
 {
 	int i, j, r_val, printed_chars;
 
