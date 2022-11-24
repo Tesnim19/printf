@@ -23,7 +23,7 @@ char *rev_string(char *s)
 	_memcpy(destination, s, length);
 	for (head = 0; head < length; head++, length--)
 	{
-		tmp = destination[len - 1];
+		tmp = destination[length - 1];
 		destination[length - 1] = destination[head];
 		destination[head] = tmp;
 	}
