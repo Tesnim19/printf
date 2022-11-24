@@ -20,12 +20,12 @@ char *rev_string(char *s)
 	if (destination == NULL)
 		return (NULL);
 
-	_memcpy(destination, s, len);
+	_memcpy(destination, s, length);
 	for (head = 0; head < length; head++, length--)
 	{
 		tmp = destination[len - 1];
 		destination[length - 1] = destination[head];
-		dest[head] = tmp;
+		destination[head] = tmp;
 	}
 	return (destination);
 }

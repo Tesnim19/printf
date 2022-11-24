@@ -15,9 +15,9 @@ int seq_parser(const char *format, form_spec spec_list[], va_list args)
 	{
 		if (format[i] == '%')
 		{
-			for (j = 0; spec_list[j].sym != NULL; j++)
+			for (j = 0; spec_list[j].op != NULL; j++)
 			{
-				if (format[i + 1] == spec_list[j].sym[0])
+				if (format[i + 1] == spec_list[j].op[0])
 				{
 					r_val = spec_list[j].f(args);
 					if (r_val == -1)
@@ -26,7 +26,7 @@ int seq_parser(const char *format, form_spec spec_list[], va_list args)
 					break;
 				}
 			}
-			if (spec_list[j].sym == NULL && format[i + 1] != ' ')
+			if (spec_list[j].op == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
 				{
